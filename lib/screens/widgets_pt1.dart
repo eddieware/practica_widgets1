@@ -14,6 +14,7 @@ class _WidgetsPt1State extends State<WidgetsPt1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('Widgets Pt1')),
       body: ListView(
         children: <Widget>[
           Container(
@@ -58,15 +59,12 @@ class _WidgetsPt1State extends State<WidgetsPt1> {
                     width: 80,
                   ),
                   FloatingActionButton(
-                    //
-
                     onPressed: () {
                       final route1 =
                           MaterialPageRoute(builder: (context) => MyApp());
 
                       Navigator.push(context, route1);
                     },
-
                     tooltip: 'Increment',
                     child: Icon(Icons.arrow_back),
                     backgroundColor: Colors.orange,
