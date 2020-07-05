@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practica_widgets1/screens/widgets_pt1.dart';
 import 'package:practica_widgets1/screens/widgets_pt2.dart';
+import 'package:practica_widgets1/screens/widgets_pt3.dart';
 
 void main() => runApp(MyApp());
 
@@ -60,6 +61,20 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(context, route1);
               },
             ),
+
+            ListTile(
+              title: Text(
+                'Alert Pt3',
+                style: TextStyle(fontSize: 25, fontStyle: FontStyle.italic),
+              ),
+              onTap: () {
+                final route1 =
+                    MaterialPageRoute(builder: (context) => Widgets_Pt3());
+
+                Navigator.push(context, route1);
+              },
+            ),
+
             // ListTile(
             //   title: Text('Tarjetas'),
             //   onTap: () {
